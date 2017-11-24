@@ -431,7 +431,7 @@ int main(int argc, char* argv[]){
                                 }
 
                           } else if(s.find('[') != string::npos && s.find(']') != string::npos){
-                              string name = s.substr(0 , s.find('=') - 1);
+                              string name = s.substr(0 , s.find('='));
                               name.erase(std::remove(name.begin(),name.end(),' '),name.end());
                               size_t found = s.find('[');
                               string matrixData,matrixName;
